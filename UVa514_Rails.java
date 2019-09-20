@@ -24,7 +24,6 @@ class UVa514_Rails {
 			{
 				Deque<Integer> station = new ArrayDeque<>();
 				Deque<Integer> storage = new ArrayDeque<>();
-				boolean done = false;
 				
 				station = new ArrayDeque<>();
 				for(int i = 0; i < n; i++)
@@ -32,7 +31,7 @@ class UVa514_Rails {
 				
 				int j = 1;
 				
-				while(j <= n && !done)
+				while(j <= n)
 				{
 					if(storage.contains(j))
 						break;
